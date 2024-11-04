@@ -3,12 +3,12 @@ CREATE TABLE employees(
     first_name VARCHAR(20) NOT NULL,
     surname VARCHAR(20) NOT NULL,
     fk_departments INT,
-    salary NUMBER(8,2)
+    salary DECIMAL(8,2)
 );
 
 CREATE TABLE departments(
     id INT PRIMARY KEY,
-    dep_name VARCHAR(20) NOT NULL,
+    dep_name VARCHAR(20) NOT NULL
 );
 
 INSERT INTO departments (id, dep_name) VALUES (1, 'HR');
